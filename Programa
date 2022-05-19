@@ -1,0 +1,20 @@
+#Programa que gera 5 números aleatórios e coloca numa Tupla.
+
+#Primeira maneira:
+from random import sample
+sorteio = tuple(sample(range(1, 11), 5))
+
+print(f'Os números sorteados foram: {sorteio}.')
+print(f'O MAIOR númeo sorteado foi: {max(sorteio)}.')
+print(f'O MAIOR número sorteado foi: {min(sorteio)}.')
+
+#Segunda maneira:
+from random import randint
+tupla = ()
+
+sorteio = (randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10))
+tupla += (sorteio)
+
+print(f'Os números sorteados foram: {tupla}.')
+print(f'O MAIOR número sorteado foi: {(max(tupla))}.')
+print(f'O MENOR número sorteado foi: {(min(tupla))}.')
